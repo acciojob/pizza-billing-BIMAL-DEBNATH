@@ -22,19 +22,19 @@ public class Pizza {
         if(isVeg){
             this.price=300;
             this.extraTopping=70;
-            this.isVeg=true;
+            //this.isVeg=true;
             totalPrice=300;
         }else {
             this.price=400;
             this.extraTopping=120;
-            this.isVeg=false;
+            //this.isVeg=false;
             totalPrice=400;
         }
     }
 
     public int getPrice(){
 
-        return this.price;
+        return this.totalPrice;
     }
 
     public void addExtraCheese(){
@@ -61,11 +61,6 @@ public class Pizza {
         }
     }
 
-//    Base Price Of The Pizza: 300
-//    Extra Cheese Added: 80
-//    Extra Toppings Added: 70
-//    Paperbag Added: 20
-//    Total Price: 470
 
     public String getBill(){
         // your code goes here
